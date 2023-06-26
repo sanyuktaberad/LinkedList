@@ -1,7 +1,10 @@
 package com.bridgelabz;
 
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class DemoLinkedList {
     public static void main(String[] args) {
@@ -14,8 +17,7 @@ public class DemoLinkedList {
         numbers.add(2,40);
         System.out.println(numbers);
 
-        numbers.remove(2);
-        System.out.println(numbers);
-        System.out.println(numbers.size());
+        List ascendingOrder = numbers.stream().sorted().collect(Collectors.toList());
+        System.out.println(ascendingOrder);
     }
 }
