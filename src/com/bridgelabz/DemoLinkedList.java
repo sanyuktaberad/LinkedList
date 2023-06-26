@@ -11,9 +11,7 @@ public class DemoLinkedList {
         numbers.add(70);
         System.out.println(numbers);
 
-        numbers.pop();
+        numbers.pollLast();
         System.out.println(numbers);
-
-
     }
 }
