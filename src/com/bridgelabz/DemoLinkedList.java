@@ -7,14 +7,12 @@ public class DemoLinkedList {
     public static void main(String[] args) {
         List<Integer> numbers = new LinkedList<>();
         numbers.add(56);
-        numbers.add(30);
         numbers.add(70);
+        System.out.println(numbers);
 
-        List<Integer> linkedList = new LinkedList<>();
+        numbers.add(1,30);
+        System.out.println(numbers);
 
-        for (int i = 0; i <= numbers.size()-1 ; i++){
-            linkedList.add(numbers.get(i));
-        }
-        System.out.println(linkedList);
+
     }
 }
