@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class DemoLinkedList {
     public static void main(String[] args) {
@@ -12,5 +13,9 @@ public class DemoLinkedList {
 
         numbers.add(2,40);
         System.out.println(numbers);
+
+        numbers.remove(2);
+        System.out.println(numbers);
+        System.out.println(numbers.size());
     }
 }
